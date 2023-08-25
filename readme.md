@@ -6,6 +6,9 @@ This is the final [project][project-url] in The Odin Project's [Intermediate HTM
 
 [project-url]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
 [course-url]: https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css
+[deployment-url]: https://shravzzv.github.io/ODIN-Admin-dashboard-project/
+
+[View Demo][deployment-url]
 
 ## Features
 
