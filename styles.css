@@ -26,7 +26,7 @@ a {
 }
 
 .sidebar {
-  background-color: rgb(48, 157, 190);
+  background-color: #1992d4;
   padding: 1em;
   color: white;
 }
@@ -63,4 +63,92 @@ a {
 
 .sidebar > ul > li + li {
   margin-top: 1em;
+}
+
+/* main */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr;
+}
+
+header {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 2;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.search > img {
+  max-width: 25px;
+}
+
+.search > input {
+  border: none;
+  border-radius: 1em;
+  background-color: #e8f0ed;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.search > input::placeholder {
+  visibility: hidden;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+  font-weight: bold;
+}
+
+.status > img {
+  max-width: 25px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: bold;
+}
+
+.welcome > img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.welcome > div > p:first-child {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.welcome > div > p:last-child {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+
+.header__buttons > button {
+  border: none;
+  border-radius: 1em;
+  background-color: #1992d4;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
 }
