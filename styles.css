@@ -160,10 +160,6 @@ header {
   gap: 1em;
 }
 
-.content > section {
-  border: 1px solid #000;
-}
-
 .projects {
   grid-row: span 2;
   padding: 1em;
@@ -175,8 +171,10 @@ header {
   gap: 1em;
 }
 
-.projects > h2 {
-  font-size: 1rem;
+.projects > h2,
+.announcements > h2,
+.trending > h2 {
+  font-size: 1.125rem;
 }
 
 .projects > .cards > .card {
@@ -202,6 +200,40 @@ header {
   justify-content: flex-end;
   gap: 1em;
   margin: 1em;
+}
+
+.card__icons > img {
+  max-width: 50px;
+}
+
+.announcements {
+  padding: 1em;
+  padding-left: 0;
+}
+
+.announcements > ul {
+  background-color: white;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+}
+
+.announcements > ul > li {
+  padding: 0.5em;
+}
+
+.announcements > ul > li > h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.announcements > ul > li > p {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.announcements > ul > li + li {
+  border-top: 1px solid #000;
 }
 
 .trending {
