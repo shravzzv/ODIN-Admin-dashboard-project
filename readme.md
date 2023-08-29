@@ -36,7 +36,7 @@ The project is licensed under the [MIT license][Licence-url].
 
 <!-- links -->
 
-[pic-url]: https://res.cloudinary.com/dmt9s5xlh/image/upload/v1693290694/odin-dashboard.png
+[pic-url]: https://res.cloudinary.com/dmt9s5xlh/image/upload/v1693294291/Admin_dashboard.png
 [project-url]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
 [course-url]: https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css
 [deployment-url]: https://shravzzv.github.io/ODIN-Admin-dashboard-project/
