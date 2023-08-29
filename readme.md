@@ -2,6 +2,8 @@
 
 Now that you’ve had plenty of practice using Grid, we are going to build a full dashboard design. For this project, use whatever tools you need to get it done, but try to lean on Grid for the majority of the layout work. Go back through the lessons or practice assignments if you need a refresher.
 
+![home][pic-url]
+
 This is the final [project][project-url] in The Odin Project's [Intermediate HTML and CSS][course-url] course.
 
 [project-url]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
@@ -29,3 +31,7 @@ Install project by running:
 ## License
 
 The project is licensed under the BSD license.
+
+<!-- links -->
+
+[pic-url]: https://res.cloudinary.com/dmt9s5xlh/image/upload/v1693290694/odin-dashboard.png
