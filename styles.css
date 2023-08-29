@@ -76,6 +76,7 @@ main {
 header {
   padding: 2em;
   display: grid;
+  gap: 20px 2px;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 2;
   border-bottom: 3px solid rgb(211, 210, 210);
