@@ -11,12 +11,15 @@
   --btn-txt-clr: white;
   --btn-bg-clr: #1992d4;
   --card-lft-brdr: #f0b429;
+  --sdbr-svg-fill: white;
+  --main-svg-fill: black;
 }
 
 :root.invert {
   --txt-clr: white;
   --bg-clr-prm: #181a1b;
   --bg-clr-sec: #242729;
+  --main-svg-fill: white;
 }
 
 body {
@@ -59,7 +62,7 @@ a {
   max-height: 50px;
   width: 50px;
   flex: 1;
-  fill: white;
+  fill: var(--sdbr-svg-fill);
 }
 
 .sidebar__logo > p {
@@ -82,7 +85,7 @@ a {
 
 .sidebar > ul > li > svg {
   max-height: 25px;
-  fill: white;
+  fill: var(--sdbr-svg-fill);
 }
 
 .sidebar > ul > li > span {
@@ -118,6 +121,7 @@ header {
 
 .search > svg {
   max-width: 25px;
+  fill: var(--main-svg-fill);
 }
 
 .search > input {
@@ -142,6 +146,8 @@ header {
 
 .status > svg {
   max-width: 25px;
+  cursor: pointer;
+  fill: var(--main-svg-fill);
 }
 
 .welcome {
@@ -255,6 +261,7 @@ header {
   max-width: 25px;
   cursor: pointer;
   opacity: 0.9;
+  fill: var(--main-svg-fill);
 }
 
 .announcements,
@@ -335,11 +342,13 @@ header {
     --txt-clr: white;
     --bg-clr-prm: #181a1b;
     --bg-clr-sec: #242729;
+    --main-svg-fill: white;
   }
 
   :root.invert {
     --txt-clr: black;
     --bg-clr-prm: #fff;
     --bg-clr-sec: #e2e8f0;
+    --main-svg-fill: black;
   }
 }
