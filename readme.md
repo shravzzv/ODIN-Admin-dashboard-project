@@ -1,23 +1,23 @@
 # Admin Dashboard
 
-Now that you’ve had plenty of practice using Grid, we are going to build a full dashboard design. For this project, use whatever tools you need to get it done, but try to lean on Grid for the majority of the layout work. Go back through the lessons or practice assignments if you need a refresher.
+The Admin Dashboard project is the [final project][project-url] in The Odin Project's [Intermediate HTML and CSS course][course-url]. It is designed to showcase my skills in using HTML, CSS, and layout techniques, with a focus on Grid and Flexbox.
 
 ![dashboard][pic-url]
 [View Demo][deployment-url]
 
-This is the final [project][project-url] in The Odin Project's [Intermediate HTML and CSS][course-url] course.
-
 ## Features
 
-- Dashboard using grid and flexbox
-- Theme changes
-- Responsive design
+- **Dashboard Layout**: Utilizes Grid and Flexbox for efficient layout design.
+- **Theme Customization**: Offers the ability to change the theme of the dashboard.
+- **Responsive Design**: Ensures that the dashboard adapts gracefully to different screen sizes.
 
 ## Installation
 
-Install project by running:
+To run this project locally, follow these simple steps:
 
-1. ```bash
+1. Clone the repository:
+
+   ```bash
    git clone https://github.com/shravzzv/ODIN-Admin-dashboard-project.git
    ```
 
@@ -32,6 +32,8 @@ Install project by running:
 
 The project is licensed under the [MIT license][Licence-url].
 
+---
+
 <!-- links -->
 
 [pic-url]: https://res.cloudinary.com/dmt9s5xlh/image/upload/v1693290694/odin-dashboard.png
@@ -41,7 +43,3 @@ The project is licensed under the [MIT license][Licence-url].
 [issue-tracker-url]: https://github.com/shravzzv/ODIN-Admin-dashboard-project/issues
 [pull-req-url]: https://github.com/shravzzv/ODIN-Admin-dashboard-project/pulls
 [Licence-url]: https://github.com/shravzzv/ODIN-Admin-dashboard-project/blob/main/LICENSE
-
-```
-
-```
