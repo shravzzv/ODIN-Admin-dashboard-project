@@ -2,12 +2,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --txt-clr: black;
+  --bg-clr-prm: #fff;
+  --bg-clr-sec: #e2e8f0;
+  --sdbr-bg-clr: #1992d4;
+  --sdbr-txt-clr: white;
+  --btn-txt-clr: white;
+  --btn-bg-clr: #1992d4;
+  --card-lft-brdr: #f0b429;
+}
+
+:root.invert {
+  --txt-clr: white;
+  --bg-clr-prm: #181a1b;
+  --bg-clr-sec: #242729;
+}
+
 body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--txt-clr);
+  background-color: var(--bg-clr-prm);
 }
 
 img {
@@ -26,9 +45,9 @@ a {
 }
 
 .sidebar {
-  background-color: #1992d4;
+  background-color: var(--sdbr-bg-clr);
   padding: 1em;
-  color: white;
+  color: var(--sdbr-txt-clr);
 }
 
 .sidebar__logo {
@@ -36,15 +55,18 @@ a {
   align-items: center;
 }
 
-.sidebar__logo > img {
-  flex: 1;
+.sidebar__logo > svg {
   max-height: 50px;
+  width: 50px;
+  flex: 1;
+  fill: white;
 }
 
 .sidebar__logo > p {
   flex: 3;
   font-size: 1.5rem;
-  margin-left: 1em;
+  margin-left: 0.5em;
+  font-weight: bold;
 }
 
 .sidebar > ul {
@@ -55,10 +77,16 @@ a {
   display: flex;
   align-items: center;
   gap: 1em;
+  cursor: pointer;
 }
 
-.sidebar > ul > li > img {
-  max-height: 30px;
+.sidebar > ul > li > svg {
+  max-height: 25px;
+  fill: white;
+}
+
+.sidebar > ul > li > span {
+  font-weight: 500;
 }
 
 .sidebar > ul > li + li {
@@ -88,14 +116,14 @@ header {
   gap: 1em;
 }
 
-.search > img {
+.search > svg {
   max-width: 25px;
 }
 
 .search > input {
   border: none;
   border-radius: 1em;
-  background-color: #e2e8f0;
+  background-color: var(--bg-clr-sec);
   width: 100%;
   padding: 0.5em;
 }
@@ -112,7 +140,7 @@ header {
   font-weight: bold;
 }
 
-.status > img {
+.status > svg {
   max-width: 25px;
 }
 
@@ -121,12 +149,6 @@ header {
   align-items: center;
   gap: 1em;
   font-weight: bold;
-}
-
-.welcome > img {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
 }
 
 .welcome > div > p:first-child {
@@ -148,17 +170,33 @@ header {
 
 .header__buttons > button {
   border: none;
-  border-radius: 1em;
-  background-color: #1992d4;
-  color: white;
-  padding: 0.5em 1em;
+  border-radius: 1.5em;
+  background-color: var(--btn-bg-clr);
+  color: var(--btn-txt-clr);
+  padding: 0.75em 2em;
   cursor: pointer;
+}
+
+.user__logo {
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.user__logo.user__logo--small {
+  width: 45px;
+  height: 45px;
+}
+
+.user__logo.user__logo--big {
+  width: 75px;
+  height: 75px;
 }
 
 /* content  */
 
 .content {
-  background-color: #e2e8f0;
+  background-color: var(--bg-clr-sec);
   display: grid;
   grid-template-columns: 5fr 2fr;
   align-items: start;
@@ -172,7 +210,7 @@ header {
 
 .projects > .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
 }
 
@@ -182,12 +220,15 @@ header {
   font-size: 1.125rem;
 }
 
-.projects > .cards > .card {
-  background-color: white;
+.card {
+  background-color: var(--bg-clr-prm);
   border-radius: 8px;
-  border-left: 5px solid #f0b429;
+  border-left: 5px solid var(--card-lft-brdr);
   padding: 1.5em 1em;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card__heading {
@@ -202,14 +243,18 @@ header {
 
 .card__icons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  gap: 1em;
-  margin: 1em;
+  gap: 1.5em;
+  justify-self: flex-end;
+  height: 100%;
+  padding: 1em;
 }
 
-.card__icons > img {
-  max-width: 50px;
+.card__icons > svg {
+  max-width: 25px;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .announcements,
@@ -219,7 +264,7 @@ header {
 
 .announcements > ul,
 .trending > ul {
-  background-color: white;
+  background-color: var(--bg-clr-prm);
   padding: 1em 1.5em;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
@@ -241,7 +286,7 @@ header {
 }
 
 .announcements > ul > li + li {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--txt-clr);
 }
 
 .trending {
@@ -277,4 +322,24 @@ header {
 .trending > ul > li > div > p:nth-child(2) {
   opacity: 0.9;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  body > aside {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --txt-clr: white;
+    --bg-clr-prm: #181a1b;
+    --bg-clr-sec: #242729;
+  }
+
+  :root.invert {
+    --txt-clr: black;
+    --bg-clr-prm: #fff;
+    --bg-clr-sec: #e2e8f0;
+  }
 }
