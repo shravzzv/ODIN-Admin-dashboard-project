@@ -72,27 +72,33 @@ a {
   font-weight: bold;
 }
 
-.sidebar > ul {
+.sidebar .lists {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em;
+}
+
+.sidebar > .lists > ul {
   margin-top: 2.5em;
 }
 
-.sidebar > ul > li {
+.sidebar > .lists > ul > li {
   display: flex;
   align-items: center;
   gap: 1em;
   cursor: pointer;
 }
 
-.sidebar > ul > li > svg {
+.sidebar .lists > ul > li > svg {
   max-height: 25px;
   fill: var(--sdbr-svg-fill);
 }
 
-.sidebar > ul > li > span {
+.sidebar .lists > ul > li > span {
   font-weight: 500;
 }
 
-.sidebar > ul > li + li {
+.sidebar .lists > ul > li + li {
   margin-top: 1em;
 }
 
