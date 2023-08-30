@@ -51,9 +51,6 @@ a {
   background-color: var(--sdbr-bg-clr);
   padding: 1em;
   color: var(--sdbr-txt-clr);
-  position: sticky;
-  top: 1em;
-  z-index: 1;
 }
 
 .sidebar__logo {
